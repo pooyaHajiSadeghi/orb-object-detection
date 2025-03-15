@@ -1,55 +1,48 @@
-# SIFT & ORB Feature Matching
+# شناسایی و تطبیق ویژگی با الگوریتم ORB  
 
-## Overview
-This project demonstrates object detection and feature matching using **ORB (Oriented FAST and Rotated BRIEF)**. The code extracts keypoints from images, matches them, and visualizes the results using OpenCV and Matplotlib.
+## 📌 معرفی پروژه  
+این پروژه پیاده‌سازی یک روش شناسایی و تطبیق ویژگی بین دو تصویر با استفاده از الگوریتم **ORB (Oriented FAST and Rotated BRIEF)** در **OpenCV** است. این الگوریتم یکی از روش‌های سریع و کارآمد برای استخراج ویژگی‌ها از تصاویر محسوب می‌شود و برای کاربردهای مختلفی از جمله **بینایی کامپیوتری، شناسایی اشیا و تشخیص الگو** استفاده می‌شود.  
 
-## Features
-- Detects key features in images using ORB
-- Matches features between a query image and a train image
-- Displays feature points and matched keypoints
-- Uses brute-force matching for descriptor comparison
-
-## Installation
-Ensure you have Python and the required libraries installed.
+## 🛠️ وابستگی‌ها  
+قبل از اجرای پروژه، اطمینان حاصل کنید که کتابخانه‌های مورد نیاز را نصب کرده‌اید:
 
 ```bash
 pip install numpy opencv-python matplotlib
 ```
 
-## Usage
-1. Place your images in the `images/` directory.
-2. Update the file paths in the script:
-    ```python
-    query_image = cv2.imread('images/query.png')
-    train_image = cv2.imread('images/train.png')
-    ```
-3. Run the script:
-    ```bash
-    python feature_matching.py
-    ```
+## 🚀 نحوه اجرا  
+1️⃣ ابتدا تصاویر موردنظر را در پوشه‌ی پروژه قرار دهید.  
+2️⃣ اسکریپت `orb_object_detection.py` را اجرا کنید:
 
-## Example Output
-After running the script, you should see:
-- Keypoints detected in both images
-- Matched keypoints visualized
-- Console output displaying the number of detected and matched features
+```bash
+python orb_object_detection.py
+```
 
-## Requirements
-- Python 3.7+
-- OpenCV
-- NumPy
-- Matplotlib
+3️⃣ خروجی شامل:
+   - نمایش ویژگی‌های کلیدی هر تصویر  
+   - تطبیق ویژگی‌های دو تصویر  
+   - نمایش تصاویر همراه با نقاط کلیدی و ویژگی‌های استخراج‌شده  
 
-## Contributing
-Feel free to submit pull requests or report issues.
+## 📷 نمونه خروجی  
+![نمونه خروجی](output_example.png)  
 
-## License
-This project is open-source and available under the MIT License.
+## 📚 توضیحات فنی  
+🔹 استخراج ویژگی‌ها با استفاده از `cv2.ORB_create()`  
+🔹 تطبیق ویژگی‌ها با استفاده از `cv2.BFMatcher`  
+🔹 نمایش تصاویر و ویژگی‌های شناسایی‌شده با `cv2.drawKeypoints` و `cv2.drawMatches`  
 
-## Contact
-For questions, reach out via GitHub issues or email.
+## 🏷️ ویژگی‌های پروژه  
+✅ استفاده از الگوریتم **ORB** به عنوان جایگزین سریع‌تر برای **SIFT** و **SURF**  
+✅ پیاده‌سازی با **Python** و **OpenCV**  
+✅ مناسب برای کاربردهای **شناسایی اشیا و تشخیص الگو**  
+✅ اجرای آسان و قابل توسعه  
 
----
+## 💡 توسعه‌دهندگان  
+- [نام شما](https://github.com/pooyaHajiSadeghi)  
 
-**Note:** Replace `query.png` and `train.png` with your actual image paths. 🚀
+## 📜 مجوز  
+این پروژه تحت **MIT License** منتشر شده و شما می‌توانید از آن استفاده و توسعه دهید.  
+
+---  
+🌟 اگر این پروژه برایتان مفید بود، لطفاً ⭐ استار دهید!  
 
