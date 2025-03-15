@@ -15,7 +15,7 @@ pip install numpy opencv-python matplotlib
 2️⃣ اسکریپت `orb_object_detection.py` را اجرا کنید:
 
 ```bash
-python orb_object_detection.py
+python project.py
 ```
 
 3️⃣ خروجی شامل:
