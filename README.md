@@ -24,7 +24,7 @@ pip install numpy opencv-python matplotlib
 ## 🚀 Installation and Setup Instructions
 
 1. **Clone or download** the project repository from GitHub:  
-   [https://github.com/pooyaHajiSadeghi/project-name](https://github.com/pooyaHajiSadeghi/project-name)  
+   [https://github.com/pooyaHajiSadeghi/project-name](https://github.com/pooyaHajiSadeghi/orb-object-detection
 
 2. **Place the input images** you want to process inside the project folder or a designated `images/` directory. Ensure the images are in standard formats such as `.jpg` or `.png`.
 
